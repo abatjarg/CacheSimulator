@@ -1,8 +1,8 @@
 
 /************************************************************************
-* Set Associative Cache Simulator                       			    *
-* Author: Ariunjargal Batjargal                         				*
-* 																		*
+* Set Associative Cache Simulator                                       *
+* Author: Ariunjargal Batjargal                                         *
+*                                                                       *
 * This is a simulator for set-associative caches under LRU remplacement *
 * strategy. The inputs to the simulator will be the line length, line   *
 * per set, and the cache size. The number of sets will be computed form *
