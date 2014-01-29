@@ -6,14 +6,14 @@
 * This is a simulator for set-associative caches under LRU remplacement *
 * strategy. The inputs to the simulator will be the line length, line   *
 * per set, and the cache size. The number of sets will be computed form *
-* these inputs.															*
-* 																		*
-* 0 = read data 														*
-* 1 = write data				 										*
-* 2 = instruction fetch 												*
-* 3 = unknown access type 												*
-* 4 = causes a flushing of cache 										*
-*			     														*
+* these inputs.                                                         *
+*                                                                       *
+* 0 = read data                                                         *
+* 1 = write data                                                        *
+* 2 = instruction fetch                                                 *
+* 3 = unknown access type                                               *
+* 4 = causes a flushing of cache                                        *
+*                                                                       *
 ************************************************************************/
 
 #include <stdio.h>
