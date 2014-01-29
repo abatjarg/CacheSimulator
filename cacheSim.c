@@ -249,6 +249,28 @@ void getCacheInfo(){
 	}
 };
 
+int main(void){
+	getCacheInfo();
+	readTrace();
+	initialize();
+	if(cacheSetting != 'd'){
+		for (int i=0;i<numberOfAccess;i++){
+		struct trace temp = TraceArray[i];
+		cacheAccess(temp);	
+		}
+		printf("Miss Rate: %f percent\n", (((double)numberOfAccess-(double)hitCount)/(double)numberOfAccess)*100);
+	}
+	else{
+		for (int i=0;i<numberofAccess;i++){
+		struct trace temp = TraceArray[i];
+		separateCacheAccess(temp);	
+		}
+		printf("Data Miss Rate: %f percent\n", (((double)dataAccessCount-(double)dataHitCount)/(double)dataAccessCount)*100);
+		printf("Instruction Miss Rate: %f percent\n", (((double)instAccessCount-(double)instHitCount)/(double)instAccessCount)*100);
+	}
+	}
+}
+
 
 
 
