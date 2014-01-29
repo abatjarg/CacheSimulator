@@ -268,7 +268,6 @@ int main(void){
 		printf("Data Miss Rate: %f percent\n", (((double)dataAccessCount-(double)dataHitCount)/(double)dataAccessCount)*100);
 		printf("Instruction Miss Rate: %f percent\n", (((double)instAccessCount-(double)instHitCount)/(double)instAccessCount)*100);
 	}
-	}
 }
 
 
